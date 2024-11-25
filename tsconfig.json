@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "references": [{ "path": "./tsconfig.node.json" }, { "path": "./tsconfig.web.json" }],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/renderer/*"
+      ]
+    }
+  },
+  "include": [
+    "src/renderer/env.d.ts",
+    "src/renderer/**/*",
+    "src/renderer/**/*.vue",
+    "src/preload/*.d.ts",
+    "src/renderer/main.ts",
+    "src/renderer/App.vue",
+  ],
+
+}
